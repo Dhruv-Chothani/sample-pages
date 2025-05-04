@@ -254,8 +254,8 @@ const BlogPost = ({ slug, Keyword, City }) => {
 };
 
 // Define styles object
-const extractedStyles = {
-{ border: 0 }
+const styles = {
+  style0: { border: 0 }
 };
 
 // Fix the export statement to use hardcoded values from CSV
