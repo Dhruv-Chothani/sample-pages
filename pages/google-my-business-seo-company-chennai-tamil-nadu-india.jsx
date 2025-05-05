@@ -62,7 +62,7 @@ const TestimonialSlider = ({ City, State }) => {
 
 const BlogPost = ({ slug, Keyword, City, State }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const fullLocation = `${City}, ${State}, India`;
+  const fullLocation = `Chennai, Tamil Nadu, India`;
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 300);
@@ -109,7 +109,7 @@ const BlogPost = ({ slug, Keyword, City, State }) => {
                 overflow: "hidden",
                 marginBottom: "32px",
               }}>
-                <img src="/placeholder.svg?height=400&width=800" alt={`${Keyword} in ${fullLocation}`} style={{
+                <img src="/placeholder.svg?height=400&width=800" alt={`Google my business seo company in ${fullLocation}`} style={{
                   width: "100%",
                   height: "auto",
                   objectFit: "cover",
@@ -446,9 +446,9 @@ const styles = {
 // Fix the export statement to use hardcoded values from CSV
 export default function Page() {
   // Use the values directly from the CSV that were used to generate this file
-  const slug = "${slug}";
-  const Keyword = "${Keyword}";
-  const City = "${City}";
-  const State = "${State}";
+  const slug = "google-my-business-seo-company-chennai-tamil-nadu-india";
+  const Keyword = "Google my business seo company";
+  const City = "Chennai";
+  const State = "Tamil Nadu";
   return <BlogPost slug={slug} Keyword={Keyword} City={City} State={State} />;
 }
