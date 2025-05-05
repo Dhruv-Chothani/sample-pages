@@ -1,6 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
+
+const baseStyles = {
+  body: {
+    margin: 0,
+    fontFamily: "'Inter', sans-serif",
+    backgroundColor: "#f9fafb",
+    color: "#1f2937",
+  },
+  a: {
+    color: "#2563eb",
+    textDecoration: "none",
+  },
+};
+
 // Sample Testimonials Data
 const testimonials = [
   { name: "Aesthetic Eaves Architects", location: "Mumbai, Maharashtra, India", review: "Best Service, great support.", rating: 5 },
